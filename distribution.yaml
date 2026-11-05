@@ -1,5 +1,5 @@
-name: video
-version: 0.1.0
+name: bot-video
+version: 0.2.0
 description: "根据素材与剪辑要求生成剪映草稿，并支持 FFmpeg 切片转码与 Whisper 字幕提取的视频剪辑助手"
 author: "zzyxiangnian-star"
 license: "MIT"

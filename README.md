@@ -56,13 +56,13 @@ hermes profile install https://github.com/zzyxiangnian-star/hermes-bot-video --y
 
 ### 2. 配置 `VECTCUT_API_DIR` 环境变量
 
-安装后，Hermes 会在 `~/.hermes/profiles/video/.env.EXAMPLE` 生成环境变量模板。将其复制为 `.env` 并填入你本机克隆 `VectCutAPI` 的绝对路径：
+安装后，Hermes 会在 `~/.hermes/profiles/bot-video/.env.EXAMPLE` 生成环境变量模板。将其复制为 `.env` 并填入你本机克隆 `VectCutAPI` 的绝对路径：
 
 ```bash
-cp ~/.hermes/profiles/video/.env.EXAMPLE ~/.hermes/profiles/video/.env
+cp ~/.hermes/profiles/bot-video/.env.EXAMPLE ~/.hermes/profiles/bot-video/.env
 ```
 
-编辑 `~/.hermes/profiles/video/.env`：
+编辑 `~/.hermes/profiles/bot-video/.env`：
 
 ```ini
 # Windows 示例（建议使用正斜杠避免转义问题）：
@@ -75,15 +75,15 @@ VECTCUT_API_DIR=F:/tools/VectCutAPI
 ### 3. 启动对话
 
 ```bash
-hermes -p video chat
+hermes -p bot-video chat
 # 若使用了 --alias，也可直接运行：
-video chat
+bot-video chat
 ```
 
 后续更新本 Bot 配方：
 
 ```bash
-hermes profile update video
+hermes profile update bot-video
 ```
 
 ## 推荐搭配的 Hermes 技能（Skills）
