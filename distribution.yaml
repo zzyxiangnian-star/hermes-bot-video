@@ -1,0 +1,9 @@
+name: video
+version: 0.1.0
+description: "根据素材与剪辑要求生成剪映草稿，并支持 FFmpeg 切片转码与 Whisper 字幕提取的视频剪辑助手"
+author: "zzyxiangnian-star"
+license: "MIT"
+env_requires:
+  - name: VECTCUT_API_DIR
+    description: "本机 VectCutAPI 仓库的绝对路径（包含 mcp_server.py 的目录）"
+    required: true

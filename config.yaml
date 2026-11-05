@@ -1,0 +1,22 @@
+# hermes-bot-video 配置文件
+# 仅声明本 Bot 所需的工具集与 MCP 服务器，不指定模型与任何密钥（沿用宿主默认配置）
+
+platform_toolsets:
+  cli: [terminal, file, todo, skills]
+  telegram: [terminal, file, todo, skills, send_message]
+  discord: [terminal, file, todo, skills, send_message]
+  whatsapp: [terminal, file, todo, skills, send_message]
+  slack: [terminal, file, todo, skills, send_message]
+  signal: [terminal, file, todo, skills, send_message]
+  qqbot: [terminal, file, todo, skills, send_message]
+  yuanbao: [terminal, file, todo, skills, send_message]
+
+mcp_servers:
+  vectcut:
+    command: "python"
+    args: ["${VECTCUT_API_DIR}/mcp_server.py"]
+    cwd: "${VECTCUT_API_DIR}"
+    env:
+      PYTHONPATH: "${VECTCUT_API_DIR}"
+      PYTHONIOENCODING: "utf-8"
+      DEBUG: "0"
